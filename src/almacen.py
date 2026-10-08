@@ -11,7 +11,7 @@ def guardar_datos(ruta):
     datos = {
         "inventario": gestor.INVENTARIO,
         "ventas": gestor.VENTAS,
-        "contador": gestor.contadorVentas,
+        "contador": gestor.contador_ventas,
     }
     with open(ruta, "w", encoding="utf-8") as archivo:
         json.dump(datos, archivo, indent=2, ensure_ascii=False)
@@ -38,7 +38,7 @@ def cargar_datos(ruta):
     gestor.INVENTARIO.update(datos["inventario"])
     gestor.VENTAS.clear()
     gestor.VENTAS.extend(datos["ventas"])
-    gestor.contadorVentas = datos.get("contador", 0)
+    gestor.contador_ventas = datos.get("contador", 0)
     return True
 
 

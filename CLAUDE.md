@@ -32,7 +32,7 @@ Estas reglas son el comportamiento que hay que conservar en cualquier refactoriz
   4. Descuento extra **VIP**: si el cliente empieza con `"VIP"` y
      `subtotal - descuento > 200`, se suma un **2 % del subtotal** al descuento.
   5. `IVA = 16 %` sobre `subtotal - descuento`; `total = round(base + IVA, 2)`.
-  6. Descuenta el stock, incrementa el folio (`contadorVentas`) y guarda la venta en
+  6. Descuenta el stock, incrementa el folio (`contador_ventas`) y guarda la venta en
      `VENTAS` con: `folio, codigo, nombre, cantidad, subtotal, descuento, impuesto,
      total, cliente, fecha, ticket`.
   7. El `ticket` es un texto plano con encabezado `TIENDA LA ESQUINA`; la línea de
@@ -69,7 +69,7 @@ Los módulos se importan como módulos sueltos (`import gestor`), no como paquet
 ### Estado global
 
 `gestor.py` guarda el estado en variables de módulo: `INVENTARIO` (dict
-código → producto), `VENTAS` (lista), `contadorVentas` (último folio) y `ultimo_error`
+código → producto), `VENTAS` (lista), `contador_ventas` (último folio) y `ultimo_error`
 (texto del último error). `almacen.py` y `reportes.py` las leen y modifican
 directamente.
 
@@ -89,9 +89,10 @@ retorno y la forma de los diccionarios:
 exentos en `pyproject.toml`). `INVENTARIO` y `VENTAS` se acceden siempre como
 `gestor.INVENTARIO` / `gestor.VENTAS`; se vacían con `.clear()` en lugar de
 reasignarse, y conviene mantenerlo así para que ninguna referencia quede apuntando a un
-objeto viejo. `contadorVentas`, `ultimo_error`, `hay_archivo` (antes `hayArchivo`)
-y `hacer_cosa` no los usan los tests, pero sí otros módulos: si se renombran, hay que
-actualizar todas sus referencias.
+objeto viejo. `contador_ventas` (antes `contadorVentas`), `ultimo_error`,
+`hay_archivo` (antes `hayArchivo`) y `formatear_dinero` (antes `hacer_cosa`) no los
+usan los tests, pero sí otros módulos: si se renombran, hay que actualizar todas sus
+referencias.
 
 ## Comandos
 
