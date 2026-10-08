@@ -89,7 +89,7 @@ retorno y la forma de los diccionarios:
 exentos en `pyproject.toml`). `INVENTARIO` y `VENTAS` se acceden siempre como
 `gestor.INVENTARIO` / `gestor.VENTAS`; se vacían con `.clear()` en lugar de
 reasignarse, y conviene mantenerlo así para que ninguna referencia quede apuntando a un
-objeto viejo. `contadorVentas`, `ultimo_error`, `hayArchivo`
+objeto viejo. `contadorVentas`, `ultimo_error`, `hay_archivo` (antes `hayArchivo`)
 y `hacer_cosa` no los usan los tests, pero sí otros módulos: si se renombran, hay que
 actualizar todas sus referencias.
 
