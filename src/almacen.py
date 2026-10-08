@@ -6,7 +6,7 @@ import os
 import gestor
 
 
-def guardar_datos(ruta):
+def guardar_datos(ruta: str) -> bool:
     """Guarda el inventario, las ventas y el folio actual en un JSON."""
     datos = {
         "inventario": gestor.INVENTARIO,
@@ -18,7 +18,7 @@ def guardar_datos(ruta):
     return True
 
 
-def cargar_datos(ruta):
+def cargar_datos(ruta: str) -> bool:
     """Lee el archivo JSON y deja los datos en el estado global.
 
     Regresa False si el archivo no existe o esta corrupto.
@@ -42,6 +42,6 @@ def cargar_datos(ruta):
     return True
 
 
-def hay_archivo(ruta):
+def hay_archivo(ruta: str) -> bool:
     """Indica si ya existe el archivo de datos."""
     return os.path.exists(ruta)
