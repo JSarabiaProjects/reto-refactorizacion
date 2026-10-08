@@ -1,7 +1,7 @@
 # Bitácora de refactorización
 
-**Nombre:**
-**Matrícula:**
+**Nombre: Jorge Luis Sarabia Parra**
+**Matrícula:Next-Gen Coding: Desarrollo de Software con IA Generativa (Virtual) 20260925**
 **Fecha:** 2026-10-08
 
 Registra aquí **cada refactorización** que realices con Claude Code. Copia el
@@ -61,4 +61,7 @@ Responde: ¿Qué tan útil fue Claude Code para detectar y corregir los problema
 ¿Qué propuso la IA que tú no habías notado? ¿En qué casos tuviste que corregir
 o rechazar sus sugerencias? ¿Qué aprendiste sobre refactorizar con apoyo de IA?
 
-*(Escribe aquí tu reflexión)*
+Considero que Claude Code es una excelente herramienta para el desarrollador, ya que de manera mas rapida puede detectar los detalles en el codigo, y realizar propuestas al usuario para su mejora en cuanto al funcionamiento.
+Propuso temas de legibilidad en el codigo, la localizacion de codigo no usado, o imports no usados, de manera mas rapida a lo que yo hubiera hecho.
+Practicamente no tuve que corregir nada, ya que paso a paso Claude me fue guiando y yo fui ejecutando sus prompts propuestos, analizando primeramente uno a uno.
+Aprendi a dar instrucciones a Claude, leer sus propuestas, analizar cada una de ellas, y aplicarlas de ser necesario, lo cual para este proyecto sencillo aplique todas, es muy util dar escalabilidad al software, me gusta mucho usar hoy en dia Claude, ya que me permite mejor legibilidad de mis proyectos para asi yo intervenir cuando sea necesario, y asi no me pierdo en tantos archivos, asi puedo identificar de manera mas rapida donde debo modificar.
