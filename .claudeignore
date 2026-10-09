@@ -1,0 +1,25 @@
+# Archivos que Claude Code no debe leer en este proyecto.
+
+# Entornos virtuales (en la raíz y dentro de src/)
+.venv/
+**/.venv/
+venv/
+env/
+
+# Cachés de Python y de herramientas
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Datos generados al ejecutar la app desde src/ (el semilla es /datos_ejemplo.json)
+src/datos_ejemplo.json
+
+# Basura del sistema operativo y restos del zip original
+.DS_Store
+Thumbs.db
+__MACOSX/
