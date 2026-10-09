@@ -61,9 +61,9 @@ tests/         # Pruebas pytest de caja negra (NO se modifican)
 docs/
   bitacora.md  # Bitácora de refactorizaciones (prompt, cambio, justificación, tests)
   reflexion.md # Reflexión final sobre el trabajo con la IA
+  BITACORA_TEMPLATE.md # Plantilla de la bitácora de prompts
 datos_ejemplo.json   # Datos semilla para el menú interactivo
 pyproject.toml       # Configuración de ruff y pytest (NO se modifica)
-BITACORA_TEMPLATE.md # Plantilla de la bitácora de prompts
 ```
 
 Los módulos se importan como módulos sueltos (`import gestor`), no como paquete:
@@ -155,7 +155,7 @@ SIM115, C901, N802, SIM108, N816, SIM103, UP015, I001, F401).
 ## Flujo de entrega
 
 - Trabajar en la rama `refactorizacion` y entregar con un PR hacia `main`.
-- Documentar cada refactorización en `docs/bitacora.md` (copia de `BITACORA_TEMPLATE.md`):
+- Documentar cada refactorización en `docs/bitacora.md` (copia de `docs/BITACORA_TEMPLATE.md`):
   prompt usado, cambio realizado, justificación y resultado de los tests.
 - Escribir en español los mensajes de commit, comentarios y docstrings, igual que en el
   resto del código.
